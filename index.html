@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iftar Registration | Rakib Uddin Mahim</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">Mahim</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#registration">Registration</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- PROFILE -->
+
+<section id="home" class="section">
+
+<div class="container profile">
+
+<img src="Mahim2.jpeg" class="profile-img">
+
+<h1>Rakib Uddin Mahim</h1>
+
+</div>
+
+</section>
+
+
+
+<!-- IFTAR EVENT -->
+
+<section class="section">
+
+<div class="container">
+
+<h2>Iftar Event</h2>
+
+<img src="iftar.jpeg" class="iftar-img">
+
+<p class="iftar-text">
+
+বাহারচরা রত্নপুর উচ্চ বিদ্যালয় এর সকল সাবেক শিক্ষার্থীর অবগতির জন্য জানানো যাচ্ছে যে,  
+এই রমজানে আমাদের প্রাণের বিদ্যালয় প্রাঙ্গনে Ex-BRHSian এর উদ্যোগে সাবেক শিক্ষার্থীদের  
+নিয়ে একটি ইফতার মাহফিলের আয়োজন করা হবে।  
+
+উক্ত ইফতার মাহফিলে সকল সাবেক শিক্ষার্থীদের অংশগ্রহণ করার জন্য অনুরোধ করা যাচ্ছে।
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- REGISTRATION -->
+
+<section id="registration" class="section">
+
+<div class="container">
+
+<h2>Registration For Iftar</h2>
+
+<div class="payment-info">
+
+<p><strong>Bkash:</strong> 01975594371</p>
+
+<p><strong>Nagad:</strong> 01672594371</p>
+
+</div>
+
+
+
+<form id="registrationForm">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+
+<input type="text" name="PaymentNumber" placeholder="Payment Number (01XXXXXXXXX)" required>
+
+<select name="PaymentMethod" required>
+
+<option value="">Select Payment Method</option>
+
+<option value="Bkash">Bkash</option>
+
+<option value="Nagad">Nagad</option>
+
+</select>
+
+<button type="submit">Submit Registration</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Rakib Uddin Mahim | Chattogram</p>
+
+</footer>
+
+
+
+<script>
+
+const scriptURL = "PASTE_YOUR_WEB_APP_URL_HERE"
+
+const form = document.forms['registrationForm']
+
+form.addEventListener('submit', e => {
+
+e.preventDefault()
+
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+.then(response => {
+
+alert("Registration Successful!")
+
+form.reset()
+
+})
+
+.catch(error => alert("Error! Try Again"))
+
+})
+
+</script>
+
+</body>
+
+</html>
