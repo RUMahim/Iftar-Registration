@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Iftar Registration | Rakib Uddin Mahim</title>
+<title>Iftar Registration | BRHS 2019</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -22,11 +23,8 @@
 <div class="logo">Mahim</div>
 
 <ul>
-
 <li><a href="#home">Home</a></li>
-
 <li><a href="#registration">Registration</a></li>
-
 </ul>
 
 </nav>
@@ -38,14 +36,13 @@
 
 <div class="container profile">
 
-<img src="Mahim2.jpeg" class="profile-img">
+<img src="BRHS.jpeg" class="profile-img">
 
-<h1>Rakib Uddin Mahim</h1>
+<h1> <em>BRHS Alumni Association</em></h1>
 
 </div>
 
 </section>
-
 
 
 <!-- IFTAR EVENT -->
@@ -60,18 +57,24 @@
 
 <p class="iftar-text">
 
-বাহারচরা রত্নপুর উচ্চ বিদ্যালয় এর সকল সাবেক শিক্ষার্থীর অবগতির জন্য জানানো যাচ্ছে যে,  
-এই রমজানে আমাদের প্রাণের বিদ্যালয় প্রাঙ্গনে Ex-BRHSian এর উদ্যোগে সাবেক শিক্ষার্থীদের  
-নিয়ে একটি ইফতার মাহফিলের আয়োজন করা হবে।  
+আসসালামু আলাইকুম,  
+বাহারচরা রত্নপুর উচ্চ বিদ্যালয় এর সকল সাবেক শিক্ষার্থীর অবগতির জন্য জানানো যাচ্ছে যে, এই রমজানে আমাদের প্রাণের বিদ্যালয় প্রাঙ্গনে Ex-BRHSian এর উদ্যোগে সাবেক শিক্ষার্থীদের নিয়ে একটি ইফতার মাহফিলের আয়োজন করা হবে।
 
 উক্ত ইফতার মাহফিলে সকল সাবেক শিক্ষার্থীদের অংশগ্রহণ করার জন্য অনুরোধ করা যাচ্ছে।
+
+এই ব্যাপারে প্রতি ব্যাচের ব্যাচ প্রতিনিধিদের সহযোগিতা কামনা করছি।
+
+<br> বিঃদ্রঃ সময় ২৯ শে রমজান  </br>
+<br> স্থান: স্কুলের মাঠ  </br>
+
+<br> রেজিষ্ট্রেশন ফি: ২০০ টাকা  </br>
+<br> রেজিষ্ট্রেশন শেষ তারিখ: ২৫ শে রমজান। </br>
 
 </p>
 
 </div>
 
 </section>
-
 
 
 <!-- REGISTRATION -->
@@ -85,25 +88,21 @@
 <div class="payment-info">
 
 <p><strong>Bkash:</strong> 01975594371</p>
-
 <p><strong>Nagad:</strong> 01672594371</p>
 
 </div>
-
 
 
 <form id="registrationForm">
 
 <input type="text" name="Name" placeholder="Your Name" required>
 
-<input type="text" name="PaymentNumber" placeholder="Payment Number (01XXXXXXXXX)" required>
+<input type="text" name="PaymentNumber" placeholder="যে নাম্বার থেকে টাকা পাঠাইছ" required>
 
 <select name="PaymentMethod" required>
 
 <option value="">Select Payment Method</option>
-
 <option value="Bkash">Bkash</option>
-
 <option value="Nagad">Nagad</option>
 <option value="Cash">Cash</option>
 
@@ -118,13 +117,11 @@
 </section>
 
 
-
 <footer>
 
-<p>© 2026 Rakib Uddin Mahim | Chattogram</p>
+<p>© Rakib Uddin Mahim | BRHS 2019</p>
 
 </footer>
-
 
 
 <script>
@@ -137,11 +134,11 @@ form.addEventListener('submit', e => {
 
 e.preventDefault()
 
-fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+fetch(scriptURL,{method:'POST',body:new FormData(form)})
 
-.then(response => {
+.then(response =>{
 
-alert("Registration Successful!")
+alert("Registration Successful! See you in Iftar")
 
 form.reset()
 
@@ -154,5 +151,4 @@ form.reset()
 </script>
 
 </body>
-
 </html>
